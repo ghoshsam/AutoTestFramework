@@ -44,12 +44,14 @@ namespace Auto.Test.Framework.PageObject
             }           
         }
 
-        public TE Elements {
-            get {
-                TE Element = new TE();
-                Element.WebDriver = WebDriver;
-                return Element;
-              }
+        public TE Elements {get => new TE() { WebDriver = WebDriver };
+
+            //get {
+            //    TE Element = new TE();
+            //    Element.WebDriver = WebDriver;
+            //    return Element;
+
+            //  }
         }
         public TA Asserts { get => new TA(); }
         public virtual void Navigate(string part = "")
