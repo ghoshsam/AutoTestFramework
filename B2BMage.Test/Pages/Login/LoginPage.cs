@@ -19,6 +19,7 @@ namespace B2BMage.Test.Pages
             Elements.Email.SendKeys(email);
             Elements.Pass.SendKeys(password);
             Elements.Signin.Click();
+
             Asserts.Validate("My Dashboard");
 
            // Elements.

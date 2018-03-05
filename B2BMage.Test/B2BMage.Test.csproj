@@ -26,4 +26,10 @@
     <ProjectReference Include="..\Auto.Test.Framework\Auto.Test.Framework.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="appconfig.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

@@ -13,6 +13,7 @@ namespace Auto.Test.Framework.BrowserDrivers
         IWebDriver WebDriver { get; set; }
         WebDriverWait DriverWait { get;}
         void InitDriver();
+        void CleanUp();
     }
     public class BrowserDriver<TWebDriver>: IBrowserDriver, IDisposable
          where TWebDriver : IWebDriver, new()
@@ -31,7 +32,20 @@ namespace Auto.Test.Framework.BrowserDrivers
        
         public void InitDriver()
         {
-            _webDriver = new TWebDriver();
+            
+
+            switch (typeof(TWebDriver).Name)
+            {
+                case "ChromeDriver":
+                    _webDriver = new ChromeDriver(AppDomain.CurrentDomain.BaseDirectory);
+                    break;
+                case "FirefoxDriver":
+                    _webDriver = new FirefoxDriver();
+                    break;
+                case "InternetExplorer":
+                    break;
+            }
+            
             _webDriverWait = new WebDriverWait(_webDriver, TimeSpan.FromSeconds(30));
         }
         private void InitDriver(BrowserTypes browserTypes = BrowserTypes.Chrome, int defaultTimeOut = 30)
@@ -73,8 +87,13 @@ namespace Auto.Test.Framework.BrowserDrivers
                 return _webDriverWait;
             }
         }
+        public void CleanUp()
+        {
+            _webDriver.Quit();
+            _webDriver = null;
+            _webDriverWait = null;
+        }
 
-        
         public void Dispose()
         {
             _webDriver.Quit();

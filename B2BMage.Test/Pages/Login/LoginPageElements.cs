@@ -33,7 +33,9 @@ namespace B2BMage.Test.Pages
 
         public IWebElement ResultValue
         {
-            get { return WebDriver.FindElement(By.XPath("//h1[@class='page-title']/span[@class='base']")); }
+            get {
+                return WaitUntilElementExists(By.XPath("//h1[@class='page-title']/span[@class='base']"));
+               }
         }
     }
 }

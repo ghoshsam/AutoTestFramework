@@ -17,7 +17,7 @@ namespace Auto.Test.Framework
         [OneTimeTearDown]
         public void CleanUp()
         {
-            
+            BrowserDriver.CleanUp();
         }
     }
 }

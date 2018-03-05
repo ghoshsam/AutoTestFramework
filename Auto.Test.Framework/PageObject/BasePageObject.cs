@@ -44,16 +44,8 @@ namespace Auto.Test.Framework.PageObject
             }           
         }
 
-        public TE Elements {get => new TE() { WebDriver = WebDriver };
-
-            //get {
-            //    TE Element = new TE();
-            //    Element.WebDriver = WebDriver;
-            //    return Element;
-
-            //  }
-        }
-        public TA Asserts { get => new TA(); }
+        public TE Elements {get => new TE() { WebDriver = WebDriver };}
+        public TA Asserts { get => new TA() { WebDriver = WebDriver }; }
         public virtual void Navigate(string part = "")
         {
             WebDriver.Navigate().GoToUrl(string.Concat(BaseUrl, part));

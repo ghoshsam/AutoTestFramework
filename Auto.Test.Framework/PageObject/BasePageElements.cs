@@ -15,6 +15,19 @@ namespace Auto.Test.Framework.PageObject
         {          
         }
 
+        public IWebElement WaitUntilElementExists(By by,int timeout = 10)
+        {
+            try
+            {
+                var wait = new WebDriverWait(WebDriver, TimeSpan.FromSeconds(timeout));
+                return wait.Until(ExpectedConditions.ElementExists(by));
+            }
+            catch (NoSuchElementException)
+            {
+                Console.WriteLine("Element with locator: '" + by + "' was not found in current context page.");
+                throw;
+            }
+        }
         public void SwitchToDefault()
         {
             WebDriver.SwitchTo().DefaultContent();
