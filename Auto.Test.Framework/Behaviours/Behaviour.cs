@@ -1,6 +1,6 @@
 ﻿namespace Auto.Test.Framework
 {
-    public abstract class Behavior : IBehaviour
+    public abstract class Behaviour : IBehaviour
     {
         public abstract void Execute();
      }
