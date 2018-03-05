@@ -3,10 +3,8 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Support.UI;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Auto.Test.Framework.BrowserDrivers
+namespace Auto.Test.Framework
 {
     public interface IBrowserDriver
     {

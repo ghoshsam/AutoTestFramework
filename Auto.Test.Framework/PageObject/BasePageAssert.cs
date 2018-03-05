@@ -1,9 +1,6 @@
 ﻿using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Auto.Test.Framework.PageObject
+namespace Auto.Test.Framework
 {
     public class BasePageAssert<TE> where TE :BasePageElements, new()
     {

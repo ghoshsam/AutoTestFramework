@@ -1,5 +1,5 @@
-﻿using Auto.Test.Framework.BrowserDrivers;
-using Auto.Test.Framework.PageObject;
+﻿using Auto.Test.Framework;
+using Auto.Test.Framework;
 using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;

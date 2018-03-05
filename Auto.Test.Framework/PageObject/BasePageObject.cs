@@ -1,11 +1,7 @@
-﻿using Auto.Test.Framework.BrowserDrivers;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Auto.Test.Framework.PageObject
+namespace Auto.Test.Framework
 {
     public abstract class BasePageObject<TE, TA>: IBasePageObject<TE, TA> 
         where TE:BasePageElements,new() 

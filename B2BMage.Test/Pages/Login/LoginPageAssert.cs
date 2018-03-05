@@ -1,4 +1,4 @@
-﻿using Auto.Test.Framework.PageObject;
+﻿using Auto.Test.Framework;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;

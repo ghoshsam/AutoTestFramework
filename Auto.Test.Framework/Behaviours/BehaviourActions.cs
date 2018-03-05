@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Auto.Test.Framework.Behaviours
+﻿namespace Auto.Test.Framework
 {
     public enum BehaviourActions
     {

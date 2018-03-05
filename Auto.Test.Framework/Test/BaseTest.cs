@@ -1,6 +1,4 @@
-﻿using System;
-using Auto.Test.Framework.BrowserDrivers;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using OpenQA.Selenium;
 
 namespace Auto.Test.Framework
