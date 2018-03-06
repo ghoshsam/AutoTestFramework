@@ -1,9 +1,5 @@
 ﻿using Auto.Test.Framework;
-using Auto.Test.Framework;
 using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace B2BMage.Test.Pages
 {

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Auto.Test.Framework;
-using Auto.Test.Framework;
+﻿using Auto.Test.Framework;
 
 namespace B2BMage.Test.Pages
 {
