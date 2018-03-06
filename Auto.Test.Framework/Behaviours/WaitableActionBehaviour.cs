@@ -1,6 +1,6 @@
 ﻿namespace Auto.Test.Framework
 {
-    public abstract class WaitableActionBehaviour : IBehaviour
+    public abstract class WaitableActionBehaviour : IBehavior
     {
         public void Execute()
         {

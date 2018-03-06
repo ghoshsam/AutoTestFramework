@@ -2,9 +2,9 @@
 
 namespace Auto.Test.Framework
 {
-    public abstract class BehaviorDefinition
+    public abstract class BehaviourDefinition
     {
-        public BehaviorDefinition(Type behaviorType)
+        public BehaviourDefinition(Type behaviorType)
         {
             BehaviorType = behaviorType;
         }

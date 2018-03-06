@@ -16,7 +16,7 @@ namespace B2BMage.Test.Behaviours
        
         protected override void PerformAct()
         {
-            _loginPage.Login("","");
+            _loginPage.Login("samarendra@insync.co.in", "abcd.1234");
         }
     }
 }

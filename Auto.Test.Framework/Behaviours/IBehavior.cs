@@ -1,6 +1,6 @@
 ﻿namespace Auto.Test.Framework
 {
-    public  interface IBehaviour
+    public  interface IBehavior
     {
         void Execute();
     }
