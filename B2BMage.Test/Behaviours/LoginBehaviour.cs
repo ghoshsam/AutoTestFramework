@@ -6,16 +6,17 @@ using B2BMage.Test.Pages;
 
 namespace B2BMage.Test.Behaviours
 {
-    public class LoginBehaviour : Behavior
+    public class LoginBehaviour : ActionBehaviour
     {
         private readonly LoginPage _loginPage;
         public LoginBehaviour(LoginPage loginPage)
         {
             _loginPage = loginPage;
         }
-        public override void Execute()
+       
+        protected override void PerformAct()
         {
-            throw new NotImplementedException();
+            _loginPage.Login("","");
         }
     }
 }
